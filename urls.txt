@@ -1,10 +1,3 @@
-https://httpbin.org/status/200
-https://httpbin.org/redirect-to?url=https://example.com
-https://httpbin.org/redirect/2
-https://httpbin.org/absolute-redirect/1
-https://httpbin.org/relative-redirect/2
-https://httpbin.org/status/404
-https://httpbin.org/status/500
-https://httpbin.org/delay/2
-https://google.com
-https://github.com
+https://www.google.com/
+https://chatgpt.com/
+https://www.youtube.com/
