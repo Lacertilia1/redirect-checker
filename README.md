@@ -2,6 +2,9 @@
 
 A simple Node.js script for checking HTTP redirects across large lists of URLs. The script reads URLs from a text file, sends requests without following redirects, and exports the results to a CSV file.
 
+<img width="1200" alt="Example of results.csv" src="https://github.com/user-attachments/assets/55fb8bcf-4ee2-4027-ad73-1ace2cfdda06" />
+
+
 ## How It Works
 
 1. Put your URLs in the `urls.txt` file, one URL per line.
