@@ -3,13 +3,13 @@ import fs from 'fs'
 const inputFile = './urls.txt'
 const outputFile = './results.csv'
 
-// читаем список адресов
+// read list of URLs
 const urls = fs.readFileSync(inputFile, 'utf8')
   .split('\n')
   .map(line => line.trim())
   .filter(Boolean)
 
-console.log(`Всего URL: ${urls.length}`)
+console.log(`Total URLs: ${urls.length}`)
 
 async function checkRedirect(url) {
   try {
@@ -38,7 +38,7 @@ async function run() {
 
   for (const url of urls) {
     i++
-    process.stdout.write(`Проверяю ${i}/${urls.length}\r`)
+    process.stdout.write(`Checking ${i}/${urls.length}\r`)
     const result = await checkRedirect(url)
     results.push(result)
   }
@@ -50,7 +50,7 @@ async function run() {
 
   fs.writeFileSync(outputFile, header + rows)
 
-  console.log(`\nГотово! Файл сохранен: ${outputFile}`)
+  console.log(`\nDone! File saved: ${outputFile}`)
 }
 
 run()
